@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    transition:.3s;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    border-bottom:2px solid #ddd;
+}
+
+ul{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+li{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+#themeBtn{
+    border:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.contact-container{
+
+    width:85%;
+
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+}
+
+.contact-info h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    color:gray;
+    line-height:1.8;
+}
+
+.info{
+    margin-top:25px;
+    font-size:18px;
+}
+
+.contact-form{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+input,
+textarea{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+button{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* Dark Mode */
+
+body.dark{
+    background:#111827;
+    color:white;
+}
+
+body.dark header{
+    background:#1f2937;
+}
+
+body.dark .contact-form{
+    background:#1f2937;
+}
+
+body.dark input,
+body.dark textarea{
+    background:#374151;
+    color:white;
+    border:1px solid #555;
+}
+
+body.dark a{
+    color:white;
+}
+
+body.dark .contact-info p{
+    color:#d1d5db;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    ul{
+        flex-direction:column;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+}

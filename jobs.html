@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal - Jobs</title>
+
+    <link rel="stylesheet" href="./css/jobs.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+    <!-- Header -->
+   <header>
+        <h1 class="">Job Portal</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html" >Home</a>
+                </li>
+
+                <li>
+                    <a href="./contact.html">Contact Us</a>
+                </li>
+                 <button id="themeBtn">
+                    🌙
+                </button>
+            </ul>
+           
+        </nav>
+    </header>
+
+
+    <!-- Filters -->
+    <section class="filters">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search jobs..."
+        >
+
+        <select id="companyFilter">
+
+            <option value="">
+                All Companies
+            </option>
+
+            <option value="Google">
+                Google
+            </option>
+
+            <option value="Microsoft">
+                Microsoft
+            </option>
+
+            <option value="Amazon">
+                Amazon
+            </option>
+
+            <option value="Infosys">
+                Infosys
+            </option>
+
+        </select>
+
+
+        <select id="locationFilter">
+
+            <option value="">
+                All Locations
+            </option>
+
+            <option value="Remote">
+                Remote
+            </option>
+
+            <option value="Bangalore">
+                Bangalore
+            </option>
+
+            <option value="Chennai">
+                Chennai
+            </option>
+
+            <option value="Hyderabad">
+                Hyderabad
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- Loading Skeleton -->
+    <section
+        class="loading-container"
+        id="loadingContainer"
+    >
+
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+        <div class="skeleton"></div>
+
+    </section>
+
+
+    <!-- Error State -->
+    <section
+        id="errorContainer"
+        class="error"
+    >
+
+    </section>
+
+
+    <!-- Jobs -->
+    <main>
+
+        <section
+            id="job-list"
+            class="job-list"
+        >
+
+        </section>
+
+    </main>
+
+
+    <!-- Pagination -->
+    <section class="pagination">
+
+        <button id="prevBtn">
+
+            Previous
+
+        </button>
+
+
+        <span id="pageNumber">
+
+            1
+
+        </span>
+
+
+        <button id="nextBtn">
+
+            Next
+
+        </button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+
+            VTU29827 | VEL TECH UNIVERSITY
+
+        </p>
+
+    </footer>
+
+
+    <script src="./js/jobs.js"></script>
+
+  </script>
+</body>
+</html>
