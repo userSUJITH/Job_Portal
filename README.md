@@ -150,6 +150,6 @@ https://github.com/<your-username>/o2h-job-portal
 
 ## Author
 
-**Sumanth G**  
+G.Sujith
 Vel Tech University  
 Roll No: VTU29827
